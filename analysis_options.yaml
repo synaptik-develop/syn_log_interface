@@ -1,0 +1,93 @@
+include: package:lint/strict.yaml
+linter:
+  rules:
+    use_truncating_division: true
+    avoid_equals_and_hash_code_on_mutable_classes: true
+    avoid_renaming_method_parameters: true
+    avoid_slow_async_io: true
+    flutter_style_todos: true
+    only_throw_errors: true
+    prefer_single_quotes: true
+    sort_constructors_first: true
+    unawaited_futures: true
+    unnecessary_lambdas: true
+    use_decorated_box: true
+
+    # shorter and prettier syntax
+    cascade_invocations: true
+    prefer_expression_function_bodies: true
+
+    # Key is important for tests
+    # For example purpose, logger is not flutter application.
+    use_key_in_widget_constructors: true
+
+analyzer:
+  plugins:
+    - dart_code_linter
+  language:
+    strict-casts: true
+    strict-inference: true
+    strict-raw-types: true
+  exclude:
+    - build/**
+
+  errors:
+    unused_local_variable: warning
+    missing_required_param: error
+    unused_field: warning
+    prefer_single_quotes: true  # Uncomment to enable the `prefer_single_quotes` rule
+
+dart_code_linter:
+  anti-patterns:
+    - long-method
+    - long-parameter-list
+  metrics:
+    cyclomatic-complexity: 20
+    maximum-nesting-level: 5
+    number-of-parameters: 5
+    source-lines-of-code: 80
+    halstead-volume: 150
+
+  metrics-exclude:
+    - build/**
+    
+  rules:
+    - avoid-border-all
+    - avoid-cascade-after-if-null
+    - avoid-collection-methods-with-unrelated-types
+    - avoid-double-slash-imports
+    - avoid-duplicate-exports
+    - avoid-global-state
+
+    - avoid-nested-conditional-expressions:
+        acceptable-level: 3
+    - avoid-redundant-async
+    - avoid-returning-widgets
+    - avoid-throw-in-catch-block
+    - avoid-shrink-wrap-in-lists
+    - avoid-unnecessary-setstate
+    - avoid-unrelated-type-assertions
+    - avoid-unnecessary-type-assertions
+    - avoid-unnecessary-type-casts
+    - avoid-unnecessary-conditionals
+    - avoid-unused-parameters
+    - avoid-wrapping-in-padding
+    - no-boolean-literal-compare
+    - no-empty-block
+    - no-equal-arguments
+    - no-equal-then-else
+    - no-object-declaration
+    - prefer-commenting-analyzer-ignores
+    - prefer-conditional-expressions
+    - prefer-const-border-radius
+    - prefer-correct-edge-insets-constructor
+    - prefer-enums-by-name
+    - prefer-extracting-callbacks
+    - prefer-first
+    - prefer-immediate-return
+    - prefer-iterable-of
+    - prefer-last
+    - prefer-single-widget-per-file:
+        ignore-private-widgets: true
+    - prefer-using-list-view
+    - use-setstate-synchronously

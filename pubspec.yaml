@@ -1,0 +1,12 @@
+name: syn_log_interface
+description: "Top level abstraction for `syn_thread_safe_logger`"
+version: 1.0.0
+repository: https://github.com/synaptik-develop/syn_log_interface
+
+environment:
+  sdk: ^3.7.2
+
+dev_dependencies:
+  dart_code_linter: ^2.0.0
+  lint: ^2.8.0
+  
