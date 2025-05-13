@@ -1,3 +1,6 @@
+/// Severity of log.
+///
+/// Allow easily filter result, especially for different env.
 enum LogLevel {
   verbose(weight: 0),
   debug(weight: 1),

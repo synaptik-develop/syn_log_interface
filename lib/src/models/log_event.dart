@@ -1,6 +1,9 @@
 import 'package:syn_log_interface/src/filters/log_level.dart';
 import 'package:syn_log_interface/src/filters/log_source.dart';
 
+/// Main model, which collect, hold and transfer data between threads.
+///
+/// Serialize and deserialize data.
 final class LogEvent {
   const LogEvent({
     required this.sourceName,

@@ -1,6 +1,7 @@
-include: package:lint/strict.yaml
+include: package:lint/package.yaml
 linter:
   rules:
+    public_member_api_docs: true
     use_truncating_division: true
     avoid_equals_and_hash_code_on_mutable_classes: true
     avoid_renaming_method_parameters: true
@@ -25,7 +26,6 @@ analyzer:
   plugins:
     - dart_code_linter
   language:
-    strict-casts: true
     strict-inference: true
     strict-raw-types: true
   exclude:
