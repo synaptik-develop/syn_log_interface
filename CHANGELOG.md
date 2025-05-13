@@ -1,3 +1,7 @@
+## 1.0.2
+
+* dartdoc issues.
+
 ## 1.0.1
 
 * Grammatical issues.
