@@ -6,6 +6,7 @@ import 'package:syn_log_interface/src/outputs/log_formatter.dart';
 /// In file, in concole, by socket, etc.
 /// You can freely implements you unique way for special purpose.
 abstract interface class LogWriter {
+  const LogWriter();
   LogFormatter get formatter;
   void write(LogEvent event);
 }

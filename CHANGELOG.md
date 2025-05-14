@@ -1,3 +1,7 @@
+## 1.0.3
+
+* `const` constructor for abstraction.
+
 ## 1.0.2
 
 * dartdoc issues.

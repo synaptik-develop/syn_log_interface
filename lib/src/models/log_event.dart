@@ -30,9 +30,13 @@ final class LogEvent {
   );
 
   final SourceName sourceName;
+
+  /// Optional `source` label, if same code executed in different isolates.
   final String? isolateDebugName;
   final LogLevel level;
   final String message;
+
+  /// Event's creation time.
   final DateTime time;
   final StackTrace? stackTrace;
 

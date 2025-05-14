@@ -1,6 +1,6 @@
 name: syn_log_interface
 description: "Top level abstraction for `syn_thread_safe_logger`"
-version: 1.0.2
+version: 1.0.3
 repository: https://github.com/synaptik-develop/syn_log_interface
 
 environment:
